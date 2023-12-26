@@ -1,0 +1,118 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Gorillaz';
+    src: url(../fontes/gorillaz.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Adrip';
+    src: url(../fontes/adrip.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Geo';
+    src: url(../fontes/Geometos.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação do container principal */
+.container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+    margin: 0;
+}
+
+/* Formatação da section inicio */
+.inicio{
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../imagens/photo1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+    padding: 80px 0px;
+
+}
+
+/* Formatação da div info */
+.info{
+    width: 50vw;
+    height: auto;
+    padding: 10px;
+    display: block;
+    float: right;
+}
+
+/* Formatação do h1 da div info */
+.info h1{
+	font-family: Gorillaz;
+	font-size: 90pt;
+	padding: 10px;
+	color: black;
+    animation: bounceIn;
+    animation-duration: 3s;
+}
+
+/* Formatação do h2 da div info */
+.info h2{
+	font-family: Adrip;
+	font-size: 50pt;
+	padding: 10px;
+	color: black;
+    animation: bounceIn;
+    animation-duration: 3s;
+}
+
+/* Formatação do h3 da div info */
+.info h3{
+	font-family: Adrip;
+	font-size: 70pt;
+	padding: 10px;
+	color: black;
+    animation: bounceIn;
+    animation-duration: 3s;
+}
+
+/* Formatação do button da div info */
+.info button{
+    width: 300px;
+    height: 70px;
+    border: 5px solid rgb(242, 14, 136);
+    border-radius: 50px;
+    background-color: transparent;
+    font-family: Geo;
+    font-size: 30px;
+    color: rgb(242, 14, 136);
+    animation: bounceIn;
+    animation-duration: 1s;
+}
+
+/* Formatação do button da div info ao passar o mouse */
+.info button:hover{
+    background-color: rgb(242, 14, 136);
+    color: white;
+    transition: 0.5;
+    cursor: pointer;
+    animation: pulse;
+    animation-duration: 1s;
+}
