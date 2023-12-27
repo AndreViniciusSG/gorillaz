@@ -74,7 +74,7 @@
 /* Formatação do h1 da div info */
 .info h1{
 	font-family: Gorillaz;
-	font-size: 90pt;
+	font-size: 110pt;
     font-weight: normal;
 	padding: 10px;
 	color: black;
@@ -187,9 +187,8 @@
 /* Formatação da section datas*/
 .datas{
     width: 100vw;
-    height: 100vh;
-    padding: 100px 0px;
-    margin: 0;
+    height: auto;
+    padding: 150px 0px;
     background-image: url(../imagens/photo3.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -206,9 +205,8 @@
 /* Formatação da section tour_dates*/
 .tour_dates{ 
     width: 100vw;
-    height: 100vh;
+    height: auto;
     padding: 10px;
-    margin: 0;
     background-image: url(../imagens/photo5.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -220,8 +218,8 @@
     float: left;
     width: 60vw;
     height: auto;
-    padding: 20px;
-    margin: 250px 0px;
+    padding: 30px;
+    margin: 200px 0px;
 }
 
 
@@ -229,7 +227,7 @@
 .tour_dates_info h1{
     font-family: Geom;
     font-size: 50pt;
-    padding: 10px;
+    padding: 20px;
     color: black;
     letter-spacing: 1px;
     font-weight: normal;
@@ -262,7 +260,7 @@
     height: auto;
     padding: 10px;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     padding: 10px;
     margin: 0;
     background-image: url(../imagens/photo6.png);
@@ -275,10 +273,10 @@
 .band p{
     width: 60vw;
     font-family: Geo;
-    font-size: 25pt;
+    font-size: 15pt;
     text-align: justify;
     padding: 20px;
-    margin: 80px 0px;
+    margin: 150px 15px;
     float: left;
     opacity: 0.3;
 }
@@ -291,6 +289,11 @@
         padding: 10px 0px;
         background-image: url(../imagens/photo1_mobile_2.png);
         background-position: right;
+    }
+
+    /* Formatação do h1 da div info */
+    .info h1{
+        font-size: 90pt;
     }
 
     /* Formatação da div info */
