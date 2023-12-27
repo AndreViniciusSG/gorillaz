@@ -29,6 +29,15 @@
     font-display: swap;
 }
 
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Geom';
+    src: url(../fontes/Gemstone.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+
 /* Formatação do container principal */
 .container {
 	display: flex;
@@ -44,19 +53,18 @@
 /* Formatação da section inicio */
 .inicio{
 	width: 100vw;
-	height: 100vh;
-	background-image: url(../imagens/photo1.png);
+	height: auto;
+    padding: 80px 0px;
+    background-color: rgb(201, 126, 221);
+    background-image: url(../imagens/photo1.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: fixed;
 	background-size: cover;
-    padding: 80px 0px;
-
 }
 
 /* Formatação da div info */
 .info{
-    width: 50vw;
+    width: 60vw;
     height: auto;
     padding: 10px;
     display: block;
@@ -67,9 +75,10 @@
 .info h1{
 	font-family: Gorillaz;
 	font-size: 90pt;
+    font-weight: normal;
 	padding: 10px;
 	color: black;
-    animation: bounceIn;
+    animation: jackInTheBox;
     animation-duration: 3s;
 }
 
@@ -77,9 +86,10 @@
 .info h2{
 	font-family: Adrip;
 	font-size: 50pt;
+    font-weight: normal;
 	padding: 10px;
 	color: black;
-    animation: bounceIn;
+    animation: jackInTheBox;
     animation-duration: 3s;
 }
 
@@ -87,9 +97,10 @@
 .info h3{
 	font-family: Adrip;
 	font-size: 70pt;
+    font-weight: normal;
 	padding: 10px;
 	color: black;
-    animation: bounceIn;
+    animation: jackInTheBox;
     animation-duration: 3s;
 }
 
@@ -104,7 +115,7 @@
     font-size: 30px;
     color: rgb(242, 14, 136);
     animation: bounceIn;
-    animation-duration: 1s;
+    animation-duration: 3s;
 }
 
 /* Formatação do button da div info ao passar o mouse */
@@ -115,4 +126,203 @@
     cursor: pointer;
     animation: pulse;
     animation-duration: 1s;
+}
+
+/* Formatação da section show */
+.show{
+    width: 100vw;
+    padding-top: 100px;
+    background-color: white;
+    margin: 50px 0px;
+}
+
+/* Formatação da div imagem_show*/
+.imagem_show{
+    width: 50vw;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Formatação da div imagem_show*/
+.imagem_show img{
+    width: 400px;
+    height: auto;
+    padding: 2px; 
+}
+
+/* Formatação da div imagem_show*/
+.imagem_show img:hover{
+    animation: pulse;
+    animation-duration: 2s;
+}
+
+/* Formatação da div info_show*/
+.info_show{
+    width: 30vw;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Formatação do h1 da div info_show*/
+.info_show h1{
+    font-family: Geom;
+    font-size: 45pt;
+    color: rgb(242, 14, 136);
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+/* Formatação do p da div info_show*/
+.info_show p{
+    font-family: Geo;
+    font-size: 12pt;
+    padding: 25px;
+    color: rgb(242, 14, 136);
+    font-weight: normal;
+    text-align: justify;
+}
+
+/* Formatação da section datas*/
+.datas{
+    width: 100vw;
+    height: 100vh;
+    padding: 100px 0px;
+    margin: 0;
+    background-image: url(../imagens/photo3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/* Formatação da imagem da section datas*/
+.datas img{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+}
+
+/* Formatação da section tour_dates*/
+.tour_dates{ 
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    margin: 0;
+    background-image: url(../imagens/photo5.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/* Formatação da div tour_dates_info*/
+.tour_dates_info{
+    float: left;
+    width: 60vw;
+    height: auto;
+    padding: 20px;
+    margin: 250px 0px;
+}
+
+
+/* Formatação do h1 da div tour_dates_info*/
+.tour_dates_info h1{
+    font-family: Geom;
+    font-size: 50pt;
+    padding: 10px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+
+/* Formatação do button da div tour_dates_info*/
+.tour_dates_info button{
+    width: 300px;
+    height: 70px;
+    border: 5px solid white;
+    margin: 10px 0px;
+    background-color: transparent;
+    font-family: Geo;
+    font-size: 30px;
+    color: white;
+}
+
+
+/* Formatação da div tour_dates_info*/
+.tour_dates_info button:hover{
+    background-color: white;
+    cursor: pointer;
+    color: rgb(242, 14, 136);
+}
+
+/* Formatação da section band*/
+.band{
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    margin: 0;
+    background-image: url(../imagens/photo6.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/* Formatação do p da section band*/
+.band p{
+    width: 60vw;
+    font-family: Geo;
+    font-size: 25pt;
+    text-align: justify;
+    padding: 20px;
+    margin: 80px 0px;
+    float: left;
+    opacity: 0.3;
+}
+
+/* Formatação ao diminuir a tela para uso mobile*/
+@media only screen and (min-width: 300px) and (max-width: 1000px){
+
+    /* Formatação da section inicio */
+    .inicio{
+        padding: 10px 0px;
+        background-image: url(../imagens/photo1_mobile_2.png);
+        background-position: right;
+    }
+
+    /* Formatação da div info */
+    .info{
+        width: 55vw;
+        padding: 5px;
+    }
+
+    /* Formatação da div imagem_show*/
+    .imagem_show img{
+        width: 300px;
+        height: auto;
+        padding: 2px; 
+    }
+
+        /* Formatação da div info_show*/
+    .info_show{
+        width: 40vw;
+        height: auto;
+        padding: 5px;
+        display: inline-block;
+    }
+    /* Formatação do h1 da div info_show*/
+    .info_show h1{
+        font-size: 30pt;
+        letter-spacing: 1px;
+    }
+
+    /* Formatação do p da div info_show*/
+    .info_show p{
+        font-size: 15pt;
+        padding: 10px;
+    }
+
 }
