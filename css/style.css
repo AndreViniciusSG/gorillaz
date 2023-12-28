@@ -37,6 +37,14 @@
     font-display: swap;
 }
 
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Sansation';
+    src: url(../fontes/sansation.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
 
 /* Formatação do container principal */
 .container {
@@ -229,6 +237,7 @@
     font-size: 50pt;
     padding: 20px;
     color: black;
+    text-shadow: 2px 2px white;
     letter-spacing: 1px;
     font-weight: normal;
 }
@@ -273,12 +282,255 @@
 .band p{
     width: 60vw;
     font-family: Geo;
-    font-size: 15pt;
+    font-size: 12pt;
     text-align: justify;
-    padding: 20px;
-    margin: 150px 15px;
+    padding: 10px;
+    margin: 210px 15px;
     float: left;
     opacity: 0.3;
+}
+
+/* Formatação da section discografia*/
+.discografia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 100vw;
+    height: auto;
+    padding: 50px 10px;
+    background-image: url(../imagens/photo7.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/* Formatação da div discos*/
+.discos{
+    width: 60vw;
+    height: auto;
+    padding: 10px;
+}
+
+
+/* Formatação do h1 da div discos*/
+.discos h1{
+    font-family: Geom;
+    font-size: 30pt;
+    padding: 20px;
+    color: black;
+    text-shadow: 2px 2px white;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+
+/* Formatação das imagens da div discos*/
+.discos img{
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* Formatação das imagens da div discos ao passar o mouse*/
+.discos img:hover{
+    cursor: pointer;
+	-moz-transform: scale(1.2);
+    -webkit-transition: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: 1s;
+}
+
+/* Formatação da section video*/
+.video{
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 200px;
+    background-image: url(../imagens/photo8_1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/* Formatação da section video*/
+.video h1{
+	font-family: Adrip;
+	font-size: 50pt;
+    font-weight: normal;
+	padding: 10px;
+	color: rgb(242, 14, 136);
+    margin: 10px 0px;
+}
+
+/* Formatação da section loja*/
+.loja{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 100vw;
+    height: auto;
+    padding: 50px 10px;
+    background-image: url(../imagens/photo9.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/* Formatação da div produtos*/
+.produtos{
+    width: 60vw;
+    height: auto;
+    padding: 10px;
+}
+
+
+/* Formatação do h1 da div produtos*/
+.produtos h1{
+    font-family: Geom;
+    font-size: 30pt;
+    padding: 20px;
+    color: black;
+    text-shadow: 2px 2px white;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+
+/* Formatação das imagens da div produtos*/
+.produtos img{
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* Formatação das imagens da div discos ao passar o mouse*/
+.produtos img:hover{
+    cursor: pointer;
+	-moz-transform: scale(1.2);
+    -webkit-transition: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* Formatação do button da div produtos */
+.produtos button{
+    width: 300px;
+    height: 70px;
+    border: 5px solid rgb(14, 37, 242);
+    background-color: rgb(14, 37, 242);
+    font-family: Geo;
+    font-size: 30px;
+    color: white;
+}
+
+/* Formatação do button da div produtos ao passar o mouse */
+.produtos button:hover{
+    background-color: white;
+    color: rgb(14, 37, 242);
+    border: 5px solid white;
+    transition: 0.5;
+    cursor: pointer;
+    animation: pulse;
+    animation-duration: 1s;
+}
+
+/* Formatação da section exp */
+.exp{
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    background-image: url(../imagens/exp.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Formatação do h1 da section exp */
+.exp h1{
+    font-family: Geom;
+    font-size: 30pt;
+    padding: 100px;
+    color: black;
+    margin: 200px 0px;
+    text-shadow: 2px 2px white;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+/* Formatação da section parceiros*/
+.parceiros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 100vw;
+    height: auto;
+    padding: 50px 10px;
+    background-image: url(../imagens/photo10.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/* Formatação da div patrocinio*/
+.patrocinio{
+    width: 60vw;
+    height: auto;
+    padding: 10px;
+}
+
+
+/* Formatação do h1 da div patrocinio*/
+.patrocinio h1{
+    font-family: Geom;
+    font-size: 50pt;
+    padding: 20px;
+    color: black;
+    text-shadow: 2px 2px white;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+
+/* Formatação das imagens da div patrocinio*/
+.patrocinio img{
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Formatação do rodape*/
+#rodape{
+	background-color: rgb(242, 14, 136);;
+	width: 100%;
+	padding: 50px;
+	color: black;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Sansation;
+}
+
+/* Formatação do link do rodape*/
+#rodape a{
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+/* Formatação do link do rodape*/
+#rodape a:hover{
+	text-decoration: underline;
 }
 
 /* Formatação ao diminuir a tela para uso mobile*/
@@ -326,6 +578,21 @@
     .info_show p{
         font-size: 15pt;
         padding: 10px;
+    }
+
+    /* Formatação do rodape*/
+	#rodape{
+		font-size: 20pt;
+	}
+
+    /* Formatação do p da section band*/
+    .band p{
+        width: 60vw;
+        font-family: Geo;
+        font-size: 12pt;
+        text-align: justify;
+        padding: 10px;
+        margin-top: 400px;
     }
 
 }
